@@ -17,11 +17,29 @@ Projekt badawczy łączący XGBoost z wariacyjnymi obwodami kwantowymi (VQC) w a
 
 ## Wyniki (RMSE)
 
-| Trend | Klasyczny XGBoost | Symulator | Odra 5 QPU |
+### 50 epok
+
+| Trend | Klasyczny (RMSE) | Symulator (RMSE) | Odra 5 QPU (RMSE) |
 | --- | --- | --- | --- |
-| Wzrostowy | 17.75 | 24.90 | 19.72 |
-| Spadkowy | 18.93 | 19.26 | 18.48 |
-| Boczny | 37.17 | 40.09 | 38.83 |
+| Wzrostowy | 17.75 | 19.62 | 17.18 |
+| Spadkowy | 18.93 | 20.06 | 19.21 |
+| Boczny (Mieszany) | 37.17 | 37.42 | 37.17 |
+
+### 300 epok
+
+| Trend | Klasyczny (RMSE) | Symulator (RMSE) | Odra 5 QPU (RMSE) |
+| --- | --- | --- | --- |
+| Wzrostowy | 17.75 | 24.90 | 18.35 |
+| Spadkowy | 18.93 | 19.26 | 18.37 |
+| Boczny (Mieszany) | 37.17 | 40.09 | 38.19 |
+
+### 600 epok
+
+| Trend | Klasyczny (RMSE) | Symulator (RMSE) | Odra 5 QPU (RMSE) |
+| --- | --- | --- | --- |
+| Wzrostowy | 17.75 | 18.10 | 19.33 |
+| Spadkowy | 18.93 | 20.11 | 17.57 |
+| Boczny (Mieszany) | 37.17 | 34.95 | 40.50 |
 
 ## Wnioski
 
