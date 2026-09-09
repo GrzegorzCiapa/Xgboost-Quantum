@@ -1,6 +1,13 @@
 # Xgboost-Quantum
 
-Projekt badawczy łączący XGBoost z wariacyjnymi obwodami kwantowymi (VQC) w architekturze Sim-to-QPU przy użyciu PennyLane, PyTorch oraz komputera kwantowego Odra 5 (IQM).
+Projekt badawczy łączący XGBoost z wariacyjnymi obwodami kwantowymi (VQC) w architekturze Sim-to-QPU przy użyciu PennyLane, PyTorch oraz komputera kwantowego Odra 5 (IQM). Algorytm uczy się na 3 data setach: 
+* **AirPassengers.txt**: Klasyczny, realny zbiór szeregów czasowych przedstawiający miesięczną liczbę międzynarodowych pasażerów linii lotniczych w latach 1949–1960, charakteryzujący się silnym trendem wzrostowym oraz wyraźną roczną sezonowością.
+
+
+* **Trend_Spadkowy.txt**: Syntetyczny zbiór danych modelujący miesięczną liczbę pasażerów w latach 2010–2019, w którym występuje wyraźny, długoterminowy trend malejący (liczba pasażerów systematycznie spada z ponad 1000 na początku do ok. 350-400 pod koniec) przy zachowaniu cykliczności.
+
+
+* **Trend_Boczny.txt**: Syntetyczny zbiór danych z lat 2010–2019 symulujący rynek o trendzie bocznym (stacjonarnym), gdzie wartości fluktuują w zbliżonym, powtarzalnym przedziale (głównie między 370 a 650) bez wyraźnego wzrostu lub spadku w ujęciu wieloletnim.
 
 ## Wymagania
 
@@ -8,7 +15,7 @@ Projekt badawczy łączący XGBoost z wariacyjnymi obwodami kwantowymi (VQC) w a
 
 
 
-## Architektura Pipeline'u
+## Architektura
 
 * **Różnicowanie:** Zastosowanie `diff(1)` w celu eliminacji efektu sufitu i poprawy ekstrapolacji.
 * **Ekstrakcja cech:** 5-kubitowy obwód VQC (AngleEmbedding + StronglyEntanglingLayers), generujący 15 cech kwantowych (bazy X, Y, Z).
