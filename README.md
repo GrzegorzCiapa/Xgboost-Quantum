@@ -17,6 +17,8 @@ Projekt badawczy łączący XGBoost z wariacyjnymi obwodami kwantowymi (VQC) w a
 
 ## Wyniki (RMSE)
 
+RMSE (Root Mean Square Error) - miara oceny jakości modeli regresji i predykcji. Określa ona, jak duże są średnie odchylenia między wartościami przewidywanymi przez model a rzeczywistymi danymi.
+
 ### 50 epok
 
 | Trend | Klasyczny (RMSE) | Symulator (RMSE) | Odra 5 QPU (RMSE) |
